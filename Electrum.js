@@ -1,9 +1,11 @@
-var Key = require('./Key'),
-  Point = require('./Point'),
-  twoSha256 = require('../util').twoSha256,
-  buffertools = require('buffertools'),
-  bignum = require('bignum');
+var Bitcore = require('bitcore'),
+  Key = Bitcore.Key,
+  Point = Bitcore.Point,
+  twoSha256 = Bitcore.util.twoSha256,
+  buffertools = Bitcore.buffertools,
+  bignum = Bitcore.bignum;
 
+console.log(Bitcore.util);
 /**
  * Pre-BIP32 Electrum public key derivation (electrum <2.0)
  *

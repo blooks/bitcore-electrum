@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/Levino/bitcore-electrum",
   "dependencies": {
-    "bitcore": "^0.8.5"
+    "bitcore": "0.1.41"
   }
 }
