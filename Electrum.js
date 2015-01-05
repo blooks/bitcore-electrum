@@ -3,7 +3,7 @@ var Bitcore = require('bitcore'),
   Point = Bitcore.Point,
   twoSha256 = Bitcore.util.twoSha256,
   buffertools = Bitcore.buffertools,
-  bignum = Bitcore.bignum;
+  bignum = Bitcore.Bignum;
 
 /**
  * Pre-BIP32 Electrum public key derivation (electrum <2.0)
