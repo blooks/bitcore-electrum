@@ -5,7 +5,6 @@ var Bitcore = require('bitcore'),
   buffertools = Bitcore.buffertools,
   bignum = Bitcore.bignum;
 
-console.log(Bitcore.util);
 /**
  * Pre-BIP32 Electrum public key derivation (electrum <2.0)
  *
