@@ -1,6 +1,6 @@
 {
   "name": "bitcore-electrum",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A bitcore addon to allow for electrum style key derivation.",
   "main": "Electrum.js",
   "directories": {
@@ -11,19 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Levino/bitcore-electrum.git"
+    "url": "git://github.com/coyno/bitcore-electrum.git"
   },
   "keywords": [
     "bitcoin",
     "electrum",
     "bitcore"
   ],
-  "author": "Levin Keller",
+  "author": "Coyno UG (haftungsbeschränkt)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Levino/bitcore-electrum/issues"
+    "url": "https://github.com/coyno/bitcore-electrum/issues"
   },
-  "homepage": "https://github.com/Levino/bitcore-electrum",
+  "homepage": "https://github.com/coyno/bitcore-electrum",
   "dependencies": {
     "bitcore": "0.1.41"
   }
