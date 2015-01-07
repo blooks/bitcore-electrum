@@ -1,6 +1,6 @@
 {
   "name": "bitcore-electrum",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A bitcore addon to allow for electrum style key derivation.",
   "main": "Electrum.js",
   "directories": {
