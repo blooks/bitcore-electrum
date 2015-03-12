@@ -1,13 +1,13 @@
 {
   "name": "bitcore-electrum",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A bitcore addon to allow for electrum style key derivation.",
-  "main": "Electrum.js",
+  "main": "index.js",
   "directories": {
-    "example": "examples"
+    "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "DEBUG= ./node_modules/.bin/mocha -t 5000"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,12 @@
     "url": "https://github.com/coyno/bitcore-electrum/issues"
   },
   "homepage": "https://github.com/coyno/bitcore-electrum",
+  "devDependencies": {
+    "debug": "^2.1.2",
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  },
   "dependencies": {
-    "bitcore": "0.1.41"
+    "bitcore": "^0.11.3"
   }
 }
