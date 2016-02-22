@@ -24,7 +24,10 @@
     "url": "https://github.com/coyno/bitcore-electrum/issues"
   },
   "homepage": "https://github.com/coyno/bitcore-electrum",
-  "dependencies": {
-    "bitcore": "0.1.41"
+  "devDependencies": {
+    "bitcore-lib": "^0.13.13"
+  },
+  "peerDependencies": {
+    "bitcore-lib": "^0.13.13"
   }
 }

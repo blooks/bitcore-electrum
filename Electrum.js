@@ -1,9 +1,8 @@
-var Bitcore = require('bitcore'),
-  Key = Bitcore.Key,
-  Point = Bitcore.Point,
-  twoSha256 = Bitcore.util.twoSha256,
-  buffertools = Bitcore.buffertools,
-  bignum = Bitcore.Bignum;
+var Bitcore = require('bitcore-lib'),
+  PublicKey = Bitcore.PublicKey,
+  Point = Bitcore.crypto.Point,
+  twoSha256 = Bitcore.crypto.Hash.sha256sha256,
+  bignum = Bitcore.crypto.BN;
 
 /**
  * Pre-BIP32 Electrum public key derivation (electrum <2.0)
@@ -33,7 +32,7 @@ Electrum.prototype.generatePubKey = function(n, for_change) {
   var mpk_pt = new Point(x, y);
 
   var sequence = this.getSequence(for_change, n);
-  var sequence_key = new Key();
+  var sequence_key = new PublicKey();
   sequence_key.private = sequence.toBuffer();
   sequence_key.regenerateSync();
   sequence_key.compressed = false;
@@ -50,7 +49,7 @@ Electrum.prototype.generatePubKey = function(n, for_change) {
   });
   var prefix = new Buffer([0x04]);
 
-  var key = new Key();
+  var key = new PublicKey();
   key.compressed = false;
   key.public = Buffer.concat([prefix, xbuf, ybuf]);
 
