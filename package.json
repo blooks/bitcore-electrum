@@ -24,12 +24,13 @@
     "url": "https://github.com/blooks/bitcore-electrum/issues"
   },
   "homepage": "https://github.com/blooks/bitcore-electrum",
-  "dependencies": {
+  "peerDependencies": {
     "bitcore": "0.1.41"
   },
   "engine": "^0.10",
   "devDependencies": {
     "chai": "^4.0.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "bitcore": "0.1.41"
   }
 }
